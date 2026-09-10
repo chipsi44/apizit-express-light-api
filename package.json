@@ -1,0 +1,25 @@
+{
+  "name": "apizit-express-light-api",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Standalone express light reference API.",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "main": "src/main.cjs",
+  "scripts": {
+    "start": "node src/main.cjs",
+    "build": "node --check src/app.cjs && node --check src/main.cjs",
+    "check": "npm run build && prettier --check .",
+    "format": "prettier --write .",
+    "test": "npm run build && node --test tests/api.test.cjs"
+  },
+  "dependencies": {
+    "express": "5.2.1"
+  },
+  "devDependencies": {
+    "supertest": "7.2.2",
+    "prettier": "3.9.6"
+  }
+}

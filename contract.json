@@ -1,0 +1,26 @@
+{
+  "framework": "express",
+  "profile": "light",
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/health"
+    },
+    {
+      "method": "GET",
+      "path": "/info"
+    },
+    {
+      "method": "POST",
+      "path": "/echo"
+    },
+    {
+      "method": "GET",
+      "path": "/items/{item_id}"
+    },
+    {
+      "method": "GET",
+      "path": "/slow"
+    }
+  ]
+}
